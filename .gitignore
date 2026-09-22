@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Runtime data
+backend/logs/*.log
+backend/logs/*.jsonl
+
+# Frontend dependencies and generated output
+frontend/node_modules/
+frontend/.output/
+frontend/.wrangler/
+frontend/.vinxi/
+frontend/.tanstack/
+frontend/.nitro/
+frontend/dist/
+frontend/dist-ssr/
+
+# Tooling and editor files
+.vscode/
+.idea/
+.DS_Store
+*.local
