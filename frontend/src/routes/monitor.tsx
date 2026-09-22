@@ -20,7 +20,7 @@ import {
   Zap,
   HelpCircle,
 } from "lucide-react";
-import { Joyride, Step } from "react-joyride";
+import { Joyride, Step, CallBackProps } from "react-joyride";
 import { useEffect, useMemo, useState } from "react";
 import {
   Area,
@@ -456,7 +456,7 @@ function MonitorPage() {
     }
   }, []);
 
-  const handleJoyrideCallback = (data: any) => {
+  const handleJoyrideCallback = (data: CallBackProps) => {
     const { status } = data;
     const finishedStatuses: string[] = ["finished", "skipped"];
     if (finishedStatuses.includes(status)) {
